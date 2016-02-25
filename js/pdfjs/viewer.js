@@ -33,7 +33,7 @@ var SCALE_SELECT_CONTAINER_PADDING = 8;
 var SCALE_SELECT_PADDING = 22;
 var PAGE_NUMBER_LOADING_INDICATOR = 'visiblePageIsLoading';
 var DISABLE_AUTO_FETCH_LOADING_BAR_TIMEOUT = 5000;
-PDFJS.locale = locale || 'de';//TODO: added
+PDFJS.locale = locale || 'en';//TODO: added
 
 function configure(PDFJS) {
   PDFJS.workerSrc = 'js/pdfjs/pdf.worker.js';
