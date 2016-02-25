@@ -40,7 +40,7 @@ Ext.define('Ext.ux.PdfViewer', {
     /**
      * Language of interface.
      */
-    interfaceLocale: 'de',
+    interfaceLocale: 'en',
     /**
      * Show/hide rotatable tools
      */
@@ -57,11 +57,13 @@ Ext.define('Ext.ux.PdfViewer', {
             sidebar: this.sidebar,
             secondaryToolbar: this.secondaryToolbar,
             locale: this.interfaceLocale,
-            rotatable: this.rotatable
+            rotatable: this.rotatable,
+            width: this.width || "100%",
+            height: this.height || "100%"
         });
         this.callParent();
     },
-    renderTpl: '<iframe width="100%" height="100%" srcdoc=\'<!DOCTYPE html>' +
+    renderTpl: '<iframe width="{width}" height="{height}" srcdoc=\'<!DOCTYPE html>' +
             '<!--' +
             'Copyright 2012 Mozilla Foundation' +
             'Licensed under the Apache License, Version 2.0 (the "License");' +
@@ -83,7 +85,7 @@ Ext.define('Ext.ux.PdfViewer', {
             '<meta name="google" content="notranslate">' +
             '<title>PDF viewer</title>' +
             '<link rel="stylesheet" href="js/pdfjs/css/viewer.css"/>' +
-            '<script src="js/compatibility.js"></script>' +
+            '<script src="js/pdfjs/compatibility.js"></script>' +
             '<!-- This snippet is used in production (included from viewer.html) -->' +
             '<link rel="resource" type="application/l10n" href="js/pdfjs/locale/locale.properties"/>' +
             '<script src="js/pdfjs/l10n.js"></script>' +
