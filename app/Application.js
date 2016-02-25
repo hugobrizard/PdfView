@@ -3,7 +3,7 @@ Ext.define('PdfView.Application', {
     name: 'Cfd',
     init: function () {
         Ext.create('PdfView.view.Viewport', {
-            renderTo: dociment.getElementById('container');
+            renderTo: dociment.getElementById('content');
         })
     }
   });
