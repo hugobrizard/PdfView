@@ -40,7 +40,7 @@ Ext.define('Ext.ux.PdfViewer', {
     /**
      * Language of interface.
      */
-    interfaceLocale: 'de',
+    interfaceLocale: 'en',
     /**
      * Show/hide rotatable tools
      */
