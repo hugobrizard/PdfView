@@ -4,7 +4,11 @@ Ext.define('PdfView.view.Viewport', {
     requires: [
         'PdfView.controller.PdfViewController'
     ],
+    viewModel: {},
     controller: 'pdfviewc',
+    listeners: {
+        afterrender: 'rendered'    
+    },
     items: [
 
     ]
