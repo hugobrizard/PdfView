@@ -3,6 +3,8 @@ Simple wrapper over [Mozilla's PDF.js](https://github.com/mozilla/pdf.js/) viewe
 
 Distributed over the same license as the PDF.js.
 
+**PdfViewer** - distributed with compiled library. Content of [viewer.js](https://github.com/yorl1n/PdfView/blob/master/js/pdfjs/viewer.js) is modified, so replacement with new version from Mozilla's repository will lead to crash of the component. [pdf.js](https://github.com/yorl1n/PdfView/blob/master/js/pdfjs/pdf.js) and [pdf.worker.js](https://github.com/yorl1n/PdfView/blob/master/js/pdfjs/pdf.worker.js) can be replaced with new versions. Sourcecode is not compressed, so for production the code can be minified.
+
 Provided options
 ----------------
 - **pagination** - Show/hide pagination tools
@@ -21,11 +23,18 @@ Usage
 ------
 To start to use PdfViewer copy PdfViewer.js into your **ux** folder. Configure **paths** to use ux like:
 
+```javascript
   Ext.Loader.setConfig({
     enabled: true,
     paths: {
         'Ext.ux': '`Path to ux folder`'
     }
   });
+```
 
-Copy js folder into the root of your application.
+Copy **js** folder into the root of your application.
+
+Example
+--------
+
+http://yorl1n.github.io/PdfView/
