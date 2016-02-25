@@ -5,7 +5,7 @@ Ext.define('PdfView.controller.PdfViewController', {
     vportready: function() {
         Ext.create('Ext.ux.PdfViewer', {
             renderTo: document.getElementById('content'),
-            url: 'https://mozilla.github.io/pdf.js/web/viewer.html'
+            url: 'compressed.tracemonkey-pldi-09.pdf'
         })
     }
 })
