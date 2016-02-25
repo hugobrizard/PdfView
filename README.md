@@ -24,7 +24,7 @@ To start to use PdfViewer copy PdfViewer.js into your **ux** folder. Configure *
   Ext.Loader.setConfig({
     enabled: true,
     paths: {
-        'Ext.ux': '<Path to ux folder>'
+        'Ext.ux': '`Path to ux folder`'
     }
   });
 
