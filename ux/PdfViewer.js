@@ -83,7 +83,7 @@ Ext.define('Ext.ux.PdfViewer', {
             '<meta name="google" content="notranslate">' +
             '<title>PDF viewer</title>' +
             '<link rel="stylesheet" href="js/pdfjs/css/viewer.css"/>' +
-            '<script src="js/compatibility.js"></script>' +
+            '<script src="js/pdfjs/compatibility.js"></script>' +
             '<!-- This snippet is used in production (included from viewer.html) -->' +
             '<link rel="resource" type="application/l10n" href="js/pdfjs/locale/locale.properties"/>' +
             '<script src="js/pdfjs/l10n.js"></script>' +
