@@ -34,6 +34,16 @@ To start to use PdfViewer copy PdfViewer.js into your **ux** folder. Configure *
 
 Copy **js** folder into the root of your application.
 
+Then the viewer can be added to the code:
+```javascript
+Ext.create('Ext.ux.PdfViewer', {
+            width: 900,
+            height: 500,
+            renderTo: document.body,
+            url: 'http://yorl1n.github.io/PdfView/compressed.tracemonkey-pldi-09.pdf'
+        })
+```
+
 Example
 --------
 
