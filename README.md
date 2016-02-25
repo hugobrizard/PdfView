@@ -1,2 +1,2 @@
-# PdfView
+# PdfViewer
 Extjs container wrapper over Mozilla's PDF.js
