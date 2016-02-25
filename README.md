@@ -40,6 +40,7 @@ Ext.create('Ext.ux.PdfViewer', {
             width: 900,
             height: 500,
             renderTo: document.body,
+            interfaceLocale: 'de',
             url: 'http://yorl1n.github.io/PdfView/compressed.tracemonkey-pldi-09.pdf'
         })
 ```
