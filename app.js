@@ -6,6 +6,5 @@ Ext.Loader.setConfig({
 });
 Ext.application({
     name: 'PdfView',
-    extend: 'PdfView.Application',
-    autoCreateViewport: 'PdfView.view.Viewport'
+    extend: 'PdfView.Application'
 });
