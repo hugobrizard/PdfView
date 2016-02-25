@@ -3,12 +3,6 @@ Ext.define('PdfView.Application', {
     name: 'Cfd',
     
     init: function () {
-        Ext.create('Ext.container.Viewport', {
-            renderTo: 'content',
-            items: [{
-                xtype: 'displayfield',
-                value: 'TEST'
-            }]
-        });
+
     }
   });
