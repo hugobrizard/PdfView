@@ -3,6 +3,7 @@ Ext.define('PdfView.Application', {
     name: 'Cfd',
     
     init: function () {
+        debugger;
         Ext.create('Ext.container.Viewport', {
             renderTo: document.getElementById('content'),
             items: [{
