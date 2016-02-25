@@ -1,12 +1,11 @@
 Ext.define('PdfView.view.Viewport', {
     extend: 'Ext.container.Viewport',
     layout: 'border',
-    width: 500,
-    height: 500,
+    requires: [
+        'PdfView.controller.PdfViewController'
+    ],
+    controller: 'pdfviewc',
     items: [
-    {
-      xtype: 'displayfield',
-      value: 'TEsT'
-    }
+
     ]
 });
