@@ -3,6 +3,9 @@ Ext.define('PdfView.controller.PdfViewController', {
     alias: 'controller.pdfviewc',
     
     vportready: function() {
-        Ext.Msg.alert('test');
+        Ext.create('Ext.ux.PdfViewer', {
+            renderTo: document.getElementById('content'),
+            url: 'https://mozilla.github.io/pdf.js/web/viewer.html'
+        })
     }
 })
