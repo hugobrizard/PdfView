@@ -57,11 +57,13 @@ Ext.define('Ext.ux.PdfViewer', {
             sidebar: this.sidebar,
             secondaryToolbar: this.secondaryToolbar,
             locale: this.interfaceLocale,
-            rotatable: this.rotatable
+            rotatable: this.rotatable,
+            width: this.width || "100%",
+            height: this.height || "100%"
         });
         this.callParent();
     },
-    renderTpl: '<iframe width="100%" height="100%" srcdoc=\'<!DOCTYPE html>' +
+    renderTpl: '<iframe width="{width}" height="{height}" srcdoc=\'<!DOCTYPE html>' +
             '<!--' +
             'Copyright 2012 Mozilla Foundation' +
             'Licensed under the Apache License, Version 2.0 (the "License");' +
